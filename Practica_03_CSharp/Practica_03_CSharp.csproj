@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Clases\Empleado.cs" />
     <Compile Include="Clases\EstudiosException.cs" />
+    <Compile Include="Clases\Extension.cs" />
     <Compile Include="Clases\PuestoException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

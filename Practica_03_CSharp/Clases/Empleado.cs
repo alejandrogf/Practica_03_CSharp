@@ -25,12 +25,18 @@ namespace Practica_03_CSharp.Clases
 
     public class Empleado
     {
-        public string Nombre { get; set; }
+        private String _nombre;
+
+        public String Nombre
+        {
+            get { return _nombre; }
+            //Aquí se hace la llamada al método de extensión.
+            //El this que recibe es sobre lo que actúa, por tanto no hay q indicarlo
+            //como un parámetro. En este caso es value.
+            set { _nombre = value.Sustituye(); }
+        }
+        //public string Nombre { get; set; }
         public int Edad { get; set; }
-
-
-
-        //public EstudiosEnum Estudios { get; set; }
 
         private EstudiosEnum _estudios;
 
